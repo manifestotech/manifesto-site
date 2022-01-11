@@ -26,17 +26,23 @@ html {
 
 /* site */
 body {
+    background: #f7f7ec;
+    color: #222;
     padding: 2em;
 }
 .wrapper {
-    margin: 0 auto;
-    max-width: 600px;
+    margin: 3em auto;
+    max-width: 720px;
 }
+  .wrapper p {
+    margin: 1em 0
+  }
+
 .main-content {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
-    .manifesto strong {
-        font-size: 21px;
+    #manifesto strong {
+        font-size: 26px;
         font-weight: normal;
     }
