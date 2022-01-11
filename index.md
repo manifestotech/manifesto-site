@@ -1,6 +1,3 @@
----
----
-
 <main class="main-content">
     <section id="manifesto" class="wrapper">
         {% include_relative _manifesto/manifesto.md %}
