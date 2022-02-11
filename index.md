@@ -8,17 +8,17 @@
     </section>
     <section class="manifest__principles">
         <div markdown="1" class="container-wrapper">
-                {% include_relative _manifesto/principios.md %}
+            {% include_relative _manifesto/principios.md %}
         </div>
     </section>
     <section class="manifest__assigners">
         <div markdown="1" class="container-wrapper">
-                {% include_relative _manifesto/signatarios.md %}
+            {% include_relative _manifesto/signatarios.md %}
         </div>
     </section>
     <section class="faq">
-        <div markdown="1" class="container-wrapper">
-                {% include_relative _manifesto/perguntas_frequentes.md %}
+        <div markdown="0" class="container-wrapper">
+            {% include_relative _manifesto/perguntas_frequentes.md %}
         </div>
     </section>
 </main>
