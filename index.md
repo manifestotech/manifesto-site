@@ -1,16 +1,24 @@
-<main class="main-content">
-    <section id="manifesto" class="wrapper">
-        <div markdown="1">{% include_relative _manifesto/manifesto.md %}</div>
+<main class="manifest">
+    <section class="manifest__introduction">
+        <div class="container-wrapper">
+            <div markdown="1" class="manifest__definition">
+                {% include_relative _manifesto/manifesto.md %}
+            </div>
+        </div>
     </section>
-    <section id="principios" class="wrapper">
-        <div markdown="1">{% include_relative _manifesto/principios.md %}</div>
+    <section class="manifest__principles">
+        <div markdown="1" class="container-wrapper">
+                {% include_relative _manifesto/principios.md %}
+        </div>
+    </section>
+    <section class="manifest__assigners">
+        <div markdown="1" class="container-wrapper">
+                {% include_relative _manifesto/signatarios.md %}
+        </div>
+    </section>
+    <section class="faq">
+        <div markdown="1" class="container-wrapper">
+                {% include_relative _manifesto/perguntas_frequentes.md %}
+        </div>
     </section>
 </main>
-
-<section id="signatarios" class="wrapper">
-    <div markdown="1">{% include_relative _manifesto/signatarios.md %}</div>
-</section>
-
-<aside id="faq" class="wrapper">
-    <div markdown="1">{% include_relative _manifesto/perguntas_frequentes.md %}</div>
-</aside>
