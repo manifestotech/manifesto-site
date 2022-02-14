@@ -230,7 +230,7 @@ details summary {
   padding: 0 2rem;
 }
 
-.faq__title {
+.faq .container-wrapper > h3{
   display: inline-block;
   text-align: right;
   text-transform: uppercase;
@@ -350,7 +350,7 @@ details summary {
     left: 100px;
   }
 
-  .faq__title {
+  .faq .container-wrapper > h3{
     margin-left: 6.25rem;
     padding-right: 3rem;
     padding-left: 155px;
