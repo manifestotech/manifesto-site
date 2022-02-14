@@ -11,6 +11,6 @@
         <div id="signatarios" markdown="1" class="container-wrapper">{% include_relative _manifesto/signatarios.md %}</div>
     </section>
     <section class="faq">
-        <div id="faq" markdown="0" class="container-wrapper">{% include_relative _manifesto/perguntas_frequentes.md %}</div>
+        <div id="faq" markdown="1" class="container-wrapper">{% include_relative _manifesto/perguntas_frequentes.md %}</div>
     </section>
 </main>
