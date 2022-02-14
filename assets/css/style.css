@@ -292,7 +292,7 @@ details summary {
   .manifest__definition > p:last-child,
   .manifest__principles .container-wrapper > h3 {
     margin-left: unset;
-    margin-right: unset;
+    padding-left: unset;
     border: unset;
   }
 
