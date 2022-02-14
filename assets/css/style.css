@@ -26,7 +26,8 @@ details summary {
   padding: 0 1rem 0 2.5rem;
 }
 
-.--mobile-border-decoration {
+.manifest__definition > p:last-child,
+.manifest__principles .container-wrapper > h3 {
   margin-left: -25px;
   padding-left: 25px;
   border-left: 1px solid #282828;
@@ -229,7 +230,7 @@ details summary {
   padding: 0 2rem;
 }
 
-.faq .container-wrapper > h3{
+.faq__title {
   display: inline-block;
   text-align: right;
   text-transform: uppercase;
@@ -287,7 +288,11 @@ details summary {
 }
 
 @media (min-width: 1000px) {
-  .--mobile-border-decoration {
+
+  .manifest__definition > p:last-child,
+  .manifest__principles .container-wrapper > h3 {
+    margin-left: unset;
+    margin-right: unset;
     border: unset;
   }
 
@@ -345,7 +350,7 @@ details summary {
     left: 100px;
   }
 
-  .faq .container-wrapper > h3{
+  .faq__title {
     margin-left: 6.25rem;
     padding-right: 3rem;
     padding-left: 155px;
