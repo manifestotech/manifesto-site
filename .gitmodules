@@ -1,3 +1,4 @@
 [submodule "_manifesto"]
 	path = _manifesto
 	url = https://github.com/manifestotech/manifestotech.git
+	branch = main
