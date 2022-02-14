@@ -1,7 +1,7 @@
 <main class="manifest">
     <section class="manifest__introduction">
         <div class="container-wrapper">
-            <div id="manifesto" markdown="1" class="manifest__definition container-w">{% include_relative _manifesto/manifesto.md %}</div>
+            <div id="manifesto" markdown="1" class="manifest__definition">{% include_relative _manifesto/manifesto.md %}</div>
         </div>
     </section>
     <section class="manifest__principles">
