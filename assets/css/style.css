@@ -206,8 +206,8 @@ details summary {
 .manifest__assigners  .container-wrapper > ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
   gap: 1.875rem;
 }
 
