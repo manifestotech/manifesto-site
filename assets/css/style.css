@@ -206,9 +206,11 @@ details summary {
 .manifest__assigners  .container-wrapper > ul {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
-  gap: 1.875rem;
+  
+}
+
+.manifest__assigners .container-wrapper > ul li {
+  margin-bottom: 1.875rem;
 }
 
 .manifest__assigners  .container-wrapper > ul li {
@@ -219,6 +221,10 @@ details summary {
 .manifest__assigners  .container-wrapper > ul li strong {
   font-size: 0.95rem;
   display: block;
+}
+
+.faq {
+  padding-bottom: 10rem;
 }
 
 .faq .container-wrapper {
@@ -285,6 +291,18 @@ details summary {
 
 .faq__answer {
   color: #575757;
+}
+
+@media (min-width: 450px){
+  .manifest__assigners  .container-wrapper > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
+    gap: 1.875rem;
+  }
+
+  .manifest__assigners  .container-wrapper > ul li{
+    margin-bottom: unset;
+  }
 }
 
 @media (min-width: 1000px) {
