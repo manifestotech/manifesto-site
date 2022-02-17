@@ -275,7 +275,7 @@ details summary {
 }
 
 .faq summary::after {
-  content: "-";
+  content: "+";
   font-size: 2rem;
   font-weight: normal;
   color: #8e8e8e;
@@ -286,7 +286,7 @@ details summary {
 }
 
 .faq details[open] summary::after {
-  content: "+";
+  content: "-";
 }
 
 .faq {
