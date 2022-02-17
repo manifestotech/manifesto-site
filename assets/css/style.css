@@ -231,8 +231,9 @@ details summary {
   padding-right: 0;
 }
 
-.faq__list {
-  padding: 0 2rem;
+.faq details{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .faq .container-wrapper > h3{
@@ -246,20 +247,20 @@ details summary {
   margin-bottom: 2.5rem;
 }
 
-.faq__item {
+.faq details {
   padding: 1.25rem 0;
   border-top: 1px solid #f1efef;
 }
 
-.faq__item:not(:last-child) {
+.faq details:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.faq__item:last-child {
+.faq details:last-child {
   border-bottom: 1px solid #f1efef;
 }
 
-.faq__question {
+.faq summary {
   display: flex;
   position: relative;
   padding-right: 3rem;
@@ -267,13 +268,13 @@ details summary {
   font-weight: bold;
 }
 
-.faq__question::before {
+.faq summary::before {
   counter-increment: faq;
   content: counter(faq) ".";
   margin-right: 8px;
 }
 
-.faq__question::after {
+.faq summary::after {
   content: "-";
   font-size: 2rem;
   font-weight: normal;
@@ -284,11 +285,11 @@ details summary {
   transform: translateY(-50%);
 }
 
-.faq__item[open] .faq__question::after {
+.faq details[open] summary::after {
   content: "+";
 }
 
-.faq__answer {
+.faq {
   color: #575757;
 }
 
@@ -314,9 +315,9 @@ details summary {
   }
 
   .container-wrapper,
-  .faq__list {
-    padding-left: 16rem;
-    padding-right: 5rem;
+  .faq details {
+    margin-left: 16rem;
+    margin-right: 5rem;
   }
 
   .header__title {
@@ -421,8 +422,7 @@ details summary {
     max-width: 900px;
   }
 
-  .faq__question,
-  .faq__answer {
+  .faq details {
     font-size: 1.125rem;
   }
 }
