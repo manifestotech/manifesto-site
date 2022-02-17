@@ -227,11 +227,11 @@ details summary {
 }
 
 .faq .container-wrapper {
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.faq details{
+.faq details {
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -314,7 +314,11 @@ details summary {
     border: unset;
   }
 
-  .container-wrapper,
+  .container-wrapper {
+    padding-left: 16rem;
+    padding-right: 5rem;    
+  }
+  
   .faq details {
     margin-left: 16rem;
     margin-right: 5rem;
