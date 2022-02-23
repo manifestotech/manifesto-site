@@ -293,6 +293,10 @@ details summary {
   color: #575757;
 }
 
+.faq summary::marker {
+  content: '';
+}
+
 @media (min-width: 450px){
   .manifest__assigners  .container-wrapper > ul {
     display: grid;
