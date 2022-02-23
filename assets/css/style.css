@@ -248,12 +248,11 @@ details summary {
 }
 
 .faq details {
-  padding: 1.25rem 0;
   border-top: 1px solid #f1efef;
 }
 
-.faq details:not(:last-child) {
-  margin-bottom: 1rem;
+.faq details p {
+  margin: 0 0 2.5rem;
 }
 
 .faq details:last-child {
@@ -266,6 +265,7 @@ details summary {
   padding-right: 3rem;
   color: #444444;
   font-weight: bold;
+  padding: 1.7rem 0;
 }
 
 .faq summary::before {
@@ -285,12 +285,20 @@ details summary {
   transform: translateY(-50%);
 }
 
+.faq details[open] summary {
+  padding-bottom: 1rem;
+}
+
 .faq details[open] summary::after {
   content: "-";
 }
 
 .faq {
   color: #575757;
+}
+
+.faq summary::marker {
+  content: '';
 }
 
 @media (min-width: 450px){
