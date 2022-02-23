@@ -265,7 +265,7 @@ details summary {
   padding-right: 3rem;
   color: #444444;
   font-weight: bold;
-  padding: 1.7rem 0;
+  padding: 1.7rem 1rem 1.7rem 0;
 }
 
 .faq summary::before {
