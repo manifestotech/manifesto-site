@@ -9,7 +9,7 @@
     </section>
     <section class="manifest__assigners">
         <div id="signatarios" class="container-wrapper">
-            <h2>Signatários</h2>
+            <h3>Signatários</h3>
         
             <ul>
             {% for signatario in site.data.signatarios %}
