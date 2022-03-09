@@ -16,7 +16,7 @@
             <li>
                 <strong translate="no">{{ signatario.nome }}</strong>
                 <span>{{ signatario.cargo }}</span>
-                {% if signatario.implementacao }
+                {% if signatario.implementacao %}
                 <a href="{{ signatario.implementacao}}"> Entenda as Ações </a>
                 {% endif %}
             </li>
