@@ -17,7 +17,7 @@
                 <strong translate="no">{{ signatario.nome }}</strong>
                 <span>{{ signatario.cargo }}</span>
                 {% if signatario.implementacao %}
-                <a href="{{ signatario.implementacao}}"> Entenda as Ações </a>
+                <a href="{{ signatario.implementacao}}" rel="noreferrer noopener" target="_blank"> Entenda as Ações </a>
                 {% endif %}
             </li>
             {% endfor %}
