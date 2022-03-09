@@ -202,10 +202,33 @@ details summary {
   max-width: 200px;
 }
 
-.manifest__assigners  .container-wrapper > ul {
+.manifest__assigners .container-wrapper > ul {
   list-style: none;
   padding: 0;
-  
+  position: relative;
+  height: 12rem;
+  overflow-y: hidden;
+}
+
+.manifest__assigners .container-wrapper > ul::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(transparent 0%, white 20%);
+
+}
+
+.manifest__assigners .container-wrapper > ul.--open {
+    transition: height 2s ease-in-out;
+    height: auto;
+}
+
+.manifest__assigners .container-wrapper > ul.--open::before {
+    content: unset;
 }
 
 .manifest__assigners .container-wrapper > ul li {
@@ -214,12 +237,59 @@ details summary {
 
 .manifest__assigners  .container-wrapper > ul li {
   font-size: 0.8rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
   color: #575757;
 }
 
 .manifest__assigners  .container-wrapper > ul li strong {
-  font-size: 0.95rem;
-  display: block;
+    font-size: 0.95rem;
+}
+
+.manifest__assigners .container-wrapper > ul li a {
+    align-self: center;
+    margin-top: .5rem;
+    padding: .25rem .5rem;
+    width: 50%;
+    transition: background-color .25s ease-in;
+    background-color: #575757;
+    border-radius: 5px;
+    color: white;
+    text-decoration: unset;
+    text-align: center;
+}
+
+.show-more__btn {
+    color: #575757;
+    position: relative;
+    border: 2px solid;
+    border-radius: 0;
+    cursor: pointer;
+    padding: .85rem 3.25rem .85rem 1.25rem;
+    background-color: transparent;
+    font-family: "Space Mono", sans-serif;
+    font-weight: bold;
+}
+
+.show-more__btn::after {
+    content: "+";
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.show-more__btn:hover {
+    color: black;
+}
+
+.show-more__btn.--open::after {
+    content: "-";
+}
+
+.manifest__assigners .container-wrapper > ul li a:hover {
+    background-color: black;
 }
 
 .faq {
@@ -308,8 +378,20 @@ details summary {
     gap: 1.875rem;
   }
 
+  .manifest__assigners .container-wrapper > ul::before {
+    background-image: linear-gradient(transparent 10%, white 50%);
+  }
+
   .manifest__assigners  .container-wrapper > ul li{
     margin-bottom: unset;
+  }
+
+  .manifest__assigners  .container-wrapper > ul li a{
+    width: auto;
+  }
+
+  .show-more__btn {
+    margin-top: 1.65rem;
   }
 }
 

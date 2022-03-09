@@ -14,10 +14,15 @@
             <ul>
             {% for signatario in site.data.signatarios %}
             <li>
-                <strong>{{ signatario.nome }}</strong> {{ signatario.cargo }}
+                <strong translate="no">{{ signatario.nome }}</strong>
+                <span>{{ signatario.cargo }}</span>
+                {% if signatario.implementacao }
+                <a href="{{ signatario.implementacao}}"> Entenda as Ações </a>
+                {% endif %}
             </li>
             {% endfor %}
             </ul>
+            <button class="show-more__btn" data-show-more="Ver todos(as)" data-show-less="Ver menos" type="button">Ver Todas(os)</button>
         </div>
     </section>
     <section class="faq">
